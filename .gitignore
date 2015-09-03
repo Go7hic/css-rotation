@@ -1,5 +1,4 @@
 #忽略 bower 安装产生的文件 bower_components
-bower.json
 bower_components
 
 #忽略 npm 安装产生的 node_modules
@@ -10,6 +9,4 @@ resources/less/*.css
 
 # 忽略 grunt 配置等文件（dist,gruntfile,package.json）
 dist
-gruntfile.js
-package.json
 .sass-cache
