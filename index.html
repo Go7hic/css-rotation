@@ -7,7 +7,7 @@
         .rotation {
             position: relative;
             display: inline-block;
-            margin: 20px;
+            margin: 20px 30px 20px;
             width: 150px;
             height: 150px;
             background: #42b983;
@@ -44,27 +44,31 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
-        .rotation1:before {
+        .rotation1:before,.rotation5:before {
             border-style: solid;
             border-width: 75px;
-            border-color: red blue green orange;
+            border-color: rgb(66, 133, 244) rgb(234, 67, 53) rgb(251, 188, 5) rgb(52, 168, 83);
         }
-        .rotation2:before {
+        .rotation2:before,.rotation6:before {
             border-style: groove;
             border-width: 75px;
-            border-color: orange;
+            border-color: rgb(251, 188, 5);
 
         }
-        .rotation3:before {
+        .rotation3:before,.rotation7:before {
             border-style: dotted;
             border-width: 75px;
-            border-color: blue;
+            border-color: rgb(66, 133, 244);
         }
-        .rotation4:before {
+        .rotation4:before,.rotation8:before {
             border-style: dashed;
             border-width: 75px;
-            border-color: green;
+            border-color: rgb(52, 168, 83);
         }
+        .rotation5:before,.rotation6:before,.rotation7:before,.rotation8:before {
+            z-index: 1;
+        }
+
 
         @-webkit-keyframes rotate {
             from {-webkit-transform: rotate(0deg);}
@@ -83,9 +87,13 @@
     </style>
 </head>
 <body>
-    <div class="rotation rotation4"></div>
-    <div class="rotation rotation3"></div>
-    <div class="rotation rotation2"></div>
     <div class="rotation rotation1"></div>
+    <div class="rotation rotation2"></div>
+    <div class="rotation rotation3"></div>
+    <div class="rotation rotation4"></div>
+    <div class="rotation rotation5 "></div>
+    <div class="rotation rotation6 "></div>
+    <div class="rotation rotation7 "></div>
+    <div class="rotation rotation8"></div>
 </body>
 </html>
